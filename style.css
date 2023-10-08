@@ -1,0 +1,215 @@
+/* 
+
+daltonismo selecionado: tritanopia 
+onde o verde vira azul e o amarelo vira rosa
+
+
+ normal: 
+ verde #67bc45  / rgb (103, 108, 69)
+ amarelo #ffc60d / rgb (240, 198, 13)
+ botão color: rgb (78, 162, 185)
+ botão border: rgb(189, 242, 156)
+
+ 
+ daltonico: 
+ azul #77cfe8 / rgb (119, 207, 232)
+ rosa #f8b7c5 / rgb (248, 183, 197)
+
+ baseado na tabela (img src="https://enchroma.com/cdn/shop/files/Tritan-3.png?v=1682966359&width=500")
+ 
+ */
+ *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    background-image: linear-gradient(115deg, rgba(103, 108, 69, 0.9), rgba(103, 108, 69, 0.8)), url(https://wallpaperset.com/w/full/0/3/0/4407.jpg);
+}
+
+
+#titulo{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#description{
+    margin-top: 0;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2vh;
+}
+
+#formscat{ /* caixinha do formulário */
+    background-color: rgba(240, 198, 13, 0.30);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+h1,p{
+    margin: 10px auto; 
+
+}
+
+.form-cat{ /* ajuste das divs*/
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    margin-bottom: 5px;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-style: bold;
+    padding-top: 10px;
+}
+
+input, select{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-style: bold;
+}
+
+input[type="checkbox"] {
+    width: 3%; 
+    height: 20px;
+    margin-left: 50px; 
+}
+
+input[type="radio"] {
+    width: 3%; 
+    height: 20px;
+    margin-left: 50px; 
+}
+
+
+.form-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.form-radio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+textarea{
+    width: 90% ; 
+    font-size: 18px;
+    height: 100px; 
+    border-radius: 10px;
+}
+
+button{
+    width: 50%; 
+    padding: 20px;
+    font-size: 16px; 
+    background-color: rgb(131, 185, 78); 
+    color: black; 
+    border: 2px solid rgb(189, 242, 156); 
+    border-radius: 20px;
+    margin-bottom: 20px; 
+}
+
+/* media queries */
+
+@media (max-width: 1300px) {
+    body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    font-style: bold;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    background-image: linear-gradient(115deg, rgba(119, 207, 232, 0.9), rgba(119, 207, 232, 0.5)), url(https://wallpaperset.com/w/full/c/e/d/146673.jpg);
+}
+
+}
+
+@media (max-width: 1300px){
+    #formscat{
+        background-color: rgba(248, 183, 197, 0.50); 
+        width: 60%;
+       margin: 0 auto;
+        border-radius: 10px;
+}
+}
+@media (max-width: 1300px){
+    button{
+    background-color: rgb(56, 120, 137);
+    color: white;
+    border: 2px solid rgb(156, 213, 242);
+    font-size: 20px;
+}
+}
+
+@media (max-width: 1300px){
+    textarea{
+    width: 90% ; 
+    font-size: 20px;
+    height: 200px; 
+    border-radius: 10px;
+}
+} 
+
+@media screen and (max-width: 1300px){ 
+    input, select{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+} 
+
+@media screen and (max-width: 1300px){
+    input[type="checkbox"] {
+    width: 10%; 
+    height: 20px;
+    margin-left: 50px; 
+}
+}
+
+@media screen and (max-width: 1300px){
+    input[type="radio"] {
+    width: 10%; 
+    height: 20px;
+    margin-left: 50px; 
+}
+}
+
+@media screen and (max-width: 1300px){
+    label{
+    margin-bottom: 5px;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+    font-style: bold;
+    padding-top: 10px;
+}
+}

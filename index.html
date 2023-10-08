@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Gatinho</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Queremos conhecer o seu gatinho!</h1>
+    <p id="description">Pesquisa para donos de bichanos ♥</p>
+
+    <form id="formscat" action="">
+        <!-- Primeira parte -->
+        <div class="form-cat">
+            <label for="tutor" id="tutor-label">Seu Nome</label>
+            <input id="tutor" name="tutor" type="text" placeholder="Digite aqui o seu nome" required>
+        </div>
+        <div class="form-cat">
+            <label for="email" id="email-label">Seu Email</label>
+            <input id="email" name="email" type="email" placeholder="Digite aqui o seu email" required>
+        </div>
+        <div class="form-cat">
+            <label for="gatinho" id="gatinho-label">Nome do gatinho</label>
+            <input id="gatinho" name="gatinho" type="text" placeholder="Digite aqui o nome do seu miau miau" required>
+        </div>
+        <div class="form-cat">
+            <label for="idade" id="idade-label">Qual a idade do seu gatinho?</label>
+            <input id="idade" name="idade" type="number" placeholder="Idade" max="20" min="1">
+        </div>
+
+        <!-- Segunda parte - radio -->
+        <div class="form-cat">
+            <label id="label-radio">Qual a cor do seu gatinho?</label>
+        </div>
+        <div class="form-radio">
+            <label id="branco"><input type="radio" id="branco" name="corgato" value="branco" checked>Branco</label>
+        </div>
+        <div class="form-radio">
+            <label id="tigrado"><input type="radio" id="tigrado" name="corgato" value="tigrado">Tigrado</label>
+        </div>
+        <div class="form-radio">
+            <label id="cinza"><input type="radio" id="cinza" name="corgato" value="cinza">Cinza</label>
+        </div>
+        <div class="form-radio">
+            <label id="preto"><input type="radio" id="preto" name="corgato" value="preto">Preto</label>
+        </div>
+        <div class="form-radio">
+            <label id="outro"><input type="radio" id="outro" name="corgato" value="outro">Outra cor</label>
+        </div>
+
+        <!-- Terceira parte - checkbox -->
+        <div class="form-cat">
+            <label id="label-checkbox">Qual a personalidade do seu gatinho?</label>
+        </div>
+        <div class="form-box">
+            <label for="amigavel"><input type="checkbox" id="amigavel" name="persona" value="amigavel" checked>Amigável</label>
+        </div>
+        <div class="form-box">
+            <label for="independente"><input type="checkbox" id="independente" name="persona" value="independente">Independente</label>
+        </div>
+        <div class="form-box">
+            <label for="brincalhao"><input type="checkbox" id="brincalhao" name="persona" value="brincalhao">Brincalhão</label>
+        </div>
+        <div class="form-box">
+            <label for="timido"><input type="checkbox" id="timido" name="persona" value="timido">Tímido</label>
+        </div>
+
+        <!-- Quarta parte - select -->
+        <div class="form-cat">
+            <label for="dropdown">Qual a comida favorita do seu gatinho?</label>
+            <select id="dropdown" name="comidafav">
+                <option value="0">Selecione uma opção</option>
+                <option value="1">Comida úmida (sachê ou enlatada)</option>
+                <option value="2">Carne cozida (frango, peixe e carne bovina)</option>
+                <option value="3">Ração</option>
+                <option value="4">Petiscos</option>
+            </select>
+        </div>
+
+        <!-- Quinta parte - comentários -->
+        <div class="form-cat">
+            <label id="label-textarea">Deixe uma história engraçada do seu gatinho</label>
+            <textarea name="relato" placeholder="Qual foi a maior travessura que o seu gatinho já fez?..."></textarea>
+        </div>
+        <div class="form-cat">
+            <button type="submit" value="Submit" id="submit">Enviar Formulário</button>
+        </div>
+    </form>
+</body>
+</html>
